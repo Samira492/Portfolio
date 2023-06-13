@@ -1,9 +1,9 @@
 :root {
   --background-colour: linear-gradient(
     180deg,
-    #180213 0%,
-    #16020e 53.36%,
-    #0e020c 100%
+    #000702 0%,
+    #010f06 53.36%,
+    #000f07 100%
   );
   --white-500: #f0f0f0;
   --white-700: #e5eeffb3;
