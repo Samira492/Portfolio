@@ -182,7 +182,7 @@ div.footer {
     height: auto;
   }
 
-  h1 {
+  header h1 {
     text-align: center;
     line-height: 2;
     margin-left: 45px;
@@ -223,6 +223,7 @@ div.footer {
   p.project-description {
     font-size: 1rem;
     text-align: center;
+    padding-right: 50px;
   }
 
   div.footer {
