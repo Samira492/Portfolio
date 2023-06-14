@@ -246,7 +246,9 @@ a {
   .career {
     margin: 0px !important;
     padding-left: 0 !important;
+    font-size: 1.4rem;
     text-align: center !important;
+    line-height: 2;
   }
 }
 
@@ -271,5 +273,8 @@ a {
   }
   .paragraph {
     margin-left: 480px;
+  }
+  .wrapper {
+    padding: 0 25px;
   }
 }
