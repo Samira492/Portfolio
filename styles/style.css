@@ -72,6 +72,59 @@ a {
 a:hover {
   cursor: pointer;
 }
+i.external-link {
+  margin-left: 6px;
+  font-size: 0.875rem;
+}
+
+a {
+  color: var(--white-500);
+}
+img.project-image {
+  border: 3px solid var(--white-700);
+  border-radius: 6px;
+  transition: 0.1s all ease-in;
+  width: 27.3vw;
+}
+
+img.project-image:hover {
+  border: 3px solid var(--accent-colour);
+  border-radius: 6px;
+}
+a.custom-button {
+  width: fit-content;
+  color: var(--accent-colour);
+  font-size: 1.125rem;
+  padding: 16px 18px;
+  border: 1px solid var(--accent-colour);
+  border-radius: 8px;
+  transition: 0.2s all ease-in;
+}
+
+a.custom-button:hover {
+  cursor: pointer;
+  box-shadow: 0.3em 0.3em 0 0 var(--accent-colour);
+}
+
+p .bold {
+  font-weight: bold;
+  color: var(--white-500);
+}
+main {
+  margin: 120px 0px;
+  padding: 0px 20px;
+}
+
+p.main-text {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--white-700);
+  line-height: 2;
+}
+.bg-dark {
+  background-color: var(--background-colour) !important;
+  color: var(--white-500) !important;
+}
 
 .social-links {
   font-size: 3rem;
@@ -95,59 +148,6 @@ a:hover {
 .information {
   margin: 100px 0;
 }
-
-main {
-  margin: 120px 0px;
-  padding: 0px 20px;
-}
-
-p.main-text {
-  font-weight: 400;
-  font-size: 1rem;
-  color: var(--white-700);
-}
-
-a.custom-button {
-  width: fit-content;
-  color: var(--accent-colour);
-  font-size: 1.125rem;
-  padding: 16px 18px;
-  border: 1px solid var(--accent-colour);
-  border-radius: 8px;
-  transition: 0.2s all ease-in;
-}
-
-a.custom-button:hover {
-  cursor: pointer;
-  box-shadow: 0.3em 0.3em 0 0 var(--accent-colour);
-}
-
-p .bold {
-  font-weight: bold;
-  color: var(--white-500);
-}
-
-.footer {
-  color: var(--white-700);
-  font-weight: 100;
-}
-
-.project:not(:last-child) {
-  margin-bottom: 3.25rem;
-}
-
-img.project-image {
-  border: 3px solid var(--white-700);
-  border-radius: 6px;
-  transition: 0.1s all ease-in;
-  width: 27.3vw;
-}
-
-img.project-image:hover {
-  border: 3px solid var(--accent-colour);
-  border-radius: 6px;
-}
-
 .project-title {
   font-size: 1.125rem;
   margin-bottom: 16px;
@@ -162,17 +162,14 @@ img.project-image:hover {
   color: var(--white-700);
 }
 
-i.external-link {
-  margin-left: 6px;
-  font-size: 0.875rem;
+div.footer {
+  color: var(--white-700);
+  font-weight: 100;
+  padding: 30px 0;
 }
 
-a {
-  color: var(--white-500);
-}
-.bg-dark {
-  background-color: var(--background-colour) !important;
-  color: var(--white-500) !important;
+.project:not(:last-child) {
+  margin-bottom: 3.25rem;
 }
 
 @media (max-width: 767px) {
@@ -218,7 +215,7 @@ a {
 
   h3.project-title {
     margin: 6px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: 600;
   }
@@ -245,7 +242,7 @@ a {
     max-width: 50%;
   }
   .career p {
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center !important;
     line-height: 2;
   }
@@ -272,8 +269,5 @@ a {
   }
   .paragraph {
     margin-left: 480px;
-  }
-  .wrapper {
-    padding: 0 15px;
   }
 }
