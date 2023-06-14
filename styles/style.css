@@ -242,8 +242,9 @@ div.footer {
     max-width: 50%;
   }
   .career p {
+    padding-right: 50px;
     font-size: 1rem;
-    text-align: center !important;
+    text-align: justify !important;
     line-height: 2;
   }
 }
