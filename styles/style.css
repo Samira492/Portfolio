@@ -24,19 +24,7 @@ header {
   margin-left: 100px;
   height: 1024px;
 }
-.icon {
-  font-size: 1.75rem;
-}
 
-.headings {
-  margin-bottom: 76px;
-}
-.contact-page {
-  padding: 50px 50px 250px 50px;
-}
-.information {
-  margin: 100px 0;
-}
 h1 {
   font-family: var(--main-font-family);
   font-weight: 300;
@@ -93,6 +81,19 @@ a:hover {
 
 .social-links:hover {
   color: var(--white-500);
+}
+.icon {
+  font-size: 1.75rem;
+}
+
+.headings {
+  margin-bottom: 76px;
+}
+.contact-page {
+  padding: 50px 50px 250px 50px;
+}
+.information {
+  margin: 100px 0;
 }
 
 main {
