@@ -157,7 +157,7 @@ div.footer {
   }
 
   ul.social-icons {
-    justify-content: center;
+    justify-content: center !important;
   }
 
   a.custom-button {
@@ -191,6 +191,9 @@ div.footer {
   }
   h1 .logo {
     display: none;
+  }
+  p.main-text {
+    padding: 0 20px;
   }
   .samira-pic {
     display: block;
