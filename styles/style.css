@@ -19,16 +19,17 @@ body {
   color: var(--white-500);
   text-align: justify;
 }
+h1,
+h2 {
+  font-weight: 300;
+}
 
 h1 {
   font-family: var(--main-font-family);
-  font-weight: 300;
   font-size: 2rem;
-  color: var(--accent-colour);
 }
 
 h2 {
-  font-weight: 300;
   font-size: 1.125rem;
 }
 
@@ -36,64 +37,87 @@ ul {
   padding: 0;
 }
 
-li a:hover {
+a,
+li a:hover,
+nav a.active,
+.social-links:hover,
+p .bold {
   color: var(--white-500);
 }
+.project-description,
+.social-links,
+p.main-text,
+div.footer,
+nav a {
+  color: var(--white-700);
+}
+.project-title:hover,
+a.custom-button,
+h1 {
+  color: var(--accent-colour);
+}
 
-a {
+a,
+img.project-image {
   text-decoration: none;
-  color: var(--white-500);
+  transition: all 100ms ease-in-out;
 }
 
-a:hover {
+a:hover,
+a.custom-button:hover {
   cursor: pointer;
 }
 i.external-link {
   margin-left: 6px;
   font-size: 0.875rem;
 }
-
-img.project-image {
+img.project-image,
+img.project-image:hover {
   border: 3px solid var(--white-700);
   border-radius: 6px;
-  transition: 0.1s all ease-in;
+}
+
+img.project-image {
+  display: block;
+  margin: 0 auto;
   width: 27.3vw;
 }
 
-img.project-image:hover {
-  border: 3px solid var(--accent-colour);
-  border-radius: 6px;
-}
 a.custom-button {
   width: fit-content;
-  color: var(--accent-colour);
   font-size: 1.125rem;
   padding: 16px 18px;
   border: 1px solid var(--accent-colour);
   border-radius: 8px;
-  transition: 0.2s all ease-in;
 }
 
 a.custom-button:hover {
-  cursor: pointer;
   box-shadow: 0.3em 0.3em 0 0 var(--accent-colour);
 }
 
 p .bold {
   font-weight: bold;
-  color: var(--white-500);
 }
 
 p.main-text {
   font-weight: 400;
   font-size: 1.1rem;
-  color: var(--white-700);
   line-height: 2;
 }
 div.footer {
-  color: var(--white-700);
   font-weight: 100;
   padding: 30px 0;
+}
+nav {
+  padding: 20px 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 60px;
+}
+nav a {
+  margin-left: 10px;
 }
 .bg-dark {
   background-color: var(--background-colour) !important;
@@ -103,12 +127,8 @@ div.footer {
 .social-links {
   font-size: 3rem;
   margin-right: 26px;
-  color: var(--white-700);
 }
 
-.social-links:hover {
-  color: var(--white-500);
-}
 .icon {
   font-size: 1.75rem;
 }
@@ -123,20 +143,28 @@ div.footer {
   margin-bottom: 16px;
 }
 
-.project-title:hover {
-  color: var(--accent-colour);
-}
-
+nav li,
 .project-description {
   font-size: 1rem;
-  color: var(--white-700);
 }
 .samira-pic {
-  max-width: 50%;
+  max-height: 500px;
 }
 
 .project:not(:last-child) {
   margin-bottom: 3.25rem;
+}
+.coder {
+  max-height: 60px;
+}
+@media (max-width: 350px) {
+  nav li {
+    font-size: 11px;
+    line-height: 35px;
+  }
+  .coder {
+    max-height: 35px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -145,16 +173,23 @@ div.footer {
     text-align: center;
   }
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
   }
+
   h1 {
     display: flex;
     justify-content: center;
     line-height: 2;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
+  .career p,
+  .project-description,
+  nav li {
+    font-size: 14px;
+  }
+  p.project-description,
   ul.social-icons {
     justify-content: center !important;
   }
@@ -168,25 +203,16 @@ div.footer {
   }
 
   h3.project-title {
-    margin: 6px;
+    padding: 10px 0 0 0;
     font-size: 1.2rem;
-    text-align: center;
     font-weight: 600;
-  }
-
-  p.project-description {
-    font-size: 1rem;
-    text-align: center;
-    padding-right: 50px;
   }
 
   div.footer {
     padding: 10px;
     text-align: center !important;
   }
-  h1 .logo {
-    display: none;
-  }
+
   p.main-text {
     padding: 0 20px;
   }
@@ -195,27 +221,21 @@ div.footer {
     margin: 0 auto;
   }
   .career p {
-    padding-right: 50px;
-    font-size: 1rem;
+    padding-left: 0;
     text-align: justify !important;
     line-height: 2;
-  }
-  .fixed {
-    margin-top: 30px;
   }
 }
 
 @media (min-width: 950px) {
   h1 {
-    margin-top: 60px;
-  }
-
-  h1 .logo {
-    position: relative;
-    top: -40px;
+    margin-top: 20px;
   }
 
   .fixed {
     position: fixed;
+  }
+  p.main-text {
+    text-align: justify;
   }
 }
